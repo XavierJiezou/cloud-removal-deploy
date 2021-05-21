@@ -1,0 +1,5 @@
+/__pycache__
+model_thick.pth
+model_thin.pth
+/test_thin
+/test_thick

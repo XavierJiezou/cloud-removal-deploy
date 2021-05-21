@@ -1,0 +1,6 @@
+{
+    "name": "Pytorch-ABCD-Recogniton",
+    "description": "resnet18 built using PyTorch",
+    "repository": "https://github.com/XavierJiezou/pytorch-abcd-recogniton",
+    "keywords": ["python", "flask", "bootstrap", "pytorch", "resnet18"]
+  }
