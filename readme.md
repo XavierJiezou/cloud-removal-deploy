@@ -10,6 +10,13 @@ This repo contains a sample code to show how to create a Flask API server by dep
 - For RCIE2 (thick cloud dateset): [model_thick.path](https://j8rd-my.sharepoint.com/:u:/g/personal/25_t_skings_club/ER8pK0UJrApDjuc0k7kiYi0BXCZZKi9_9MErXmhYk8SJWg?e=qtb8IX)
 2. Place the model on root dir.
 3. Run `app.py`.
+# Deploy
+```bash
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+./ngrok authtoken ***
+./ngrok http 9000
+```
 # Tips
 There are many images used for test in `test_thin` and `test_thick` folder.
 # Cites
