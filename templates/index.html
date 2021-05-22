@@ -22,21 +22,25 @@
                 <div class="form-group">
                     <div class="text-center">
                         <label for="inputfile" class="">
-                            <img id="imgShowHere" src="{{url_for('static', filename=inp)}}" style="max-height: 500px;min-height: 500px;min-width: 500px;" class="img-thumbnail">
-                            <img id="out" src="{{url_for('static', filename=out)}}" style="max-height: 500px;min-height: 500px;min-width: 500px;" class="img-thumbnail">
+                            <img id="imgShowHere" src="{{url_for('static', filename='img/uploadBg.png')}}" style="max-height: 500px;min-height: 500px;min-width: 500px;" class="img-thumbnail">
+                            <img id="out" src="{{url_for('static', filename='img/uploadBg.png')}}" style="max-height: 500px;min-height: 500px;min-width: 500px;" class="img-thumbnail">
                         </label>
                         <input type="file" name="file" class="" id="inputfile" style="display: none;">
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="cloud-cover" id="inlineRadio1" value="Thin" checked="checked">
-                        <label class="form-check-label" for="inlineRadio1">Thin</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="cloud-cover" id="inlineRadio2" value="Thick">
-                        <label class="form-check-label" for="inlineRadio2">Thick</label>
+                    <div class="text-center m-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="cloud-cover" id="inlineRadio1" value="Thin" checked="checked">
+                            <label class="form-check-label" for="inlineRadio1">Thin</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="cloud-cover" id="inlineRadio2" value="Thick">
+                            <label class="form-check-label" for="inlineRadio2">Thick</label>
+                        </div>
                     </div>
                     <div class="m-1">
-                        <button class="btn btn-primary" id="upload" type="submit">Upload</button>
+                        <button class="btn btn-primary" id="upload" type="button">Upload</button>
+                        <a href="{{ url_for('result_thin') }}" class="btn btn-success" title="test result of thin cloud removal">Result-Thin</a>
+                        <a href="{{ url_for('result_thick') }}" class="btn btn-info" title="test result of thick cloud removal">Result-Thick</a>
                     </div>
                 </div>
             </form>

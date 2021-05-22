@@ -15,7 +15,29 @@ $('#inputfile').bind('change', function() {
     var imgFile = this.files[0];
     var fr = new FileReader();
     fr.onload = function() {
-        var img = $('#imgShowHere').attr('src', fr.result)
+        $('#imgShowHere').attr('src', fr.result)
+        $('#out').attr('src', '/static/img/uploadBg.png')
     }
     fr.readAsDataURL(imgFile);
 });
+
+
+$('#upload').click(function(){
+    var targetUrl = $("#form").attr("action");
+    var data = new FormData($("#form")[0])
+    $.ajax({
+        type: "post",
+        url: targetUrl,
+        cache: false,
+        processData: false,
+        contentType: false,
+        data: data,
+        dataType: "json",
+        success: function(res){
+          $('#out').attr('src', res.outdir+'?'+Math.random())
+        },
+        error: function(err){
+            console.log(err)
+        }
+    })
+})

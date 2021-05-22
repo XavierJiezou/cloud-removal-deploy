@@ -1,13 +1,16 @@
 import torch
 import cv2
 import numpy as np
+from model import Generator
 
-def cloud_remove(model, org_img='inp.png', sr_img='out.png'):
+def cloud_remove(cloud_cover, org_img='inp.png', sr_img='out.png'):
     # configuration
-    model_path = 'model_1.pth'
     folder_in = './static/img/upload/'
     foler_out = './static/img/result/'
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    model = Generator(0)
+    model.load_state_dict(torch.load(f'model_{cloud_cover[0].lower()+cloud_cover[1:]}.pth'))
+    model.to(device)
 
     # read
     img = cv2.imread(folder_in+org_img, cv2.IMREAD_COLOR)
