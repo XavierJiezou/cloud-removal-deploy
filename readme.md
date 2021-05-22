@@ -1,5 +1,9 @@
 # Introduction
 This repo contains a sample code to show how to create a Flask API server by deploying our remote sensing imagery cloud removal PyTorch model that is trained on RICE dataset.
+# Demo
+> [https://611bd10d7682.ngrok.io/](https://611bd10d7682.ngrok.io/)
+
+![demo.png](demo.png)
 # Usage
 1. Download the pretrained model.
 - For RCIE1 (thin cloud dataset): [model_thin.pth](https://j8rd-my.sharepoint.com/:u:/g/personal/25_t_skings_club/EVw8ftEDszJBrT403aVmmCwBZFPOrNZuYb1pSVyU7MAQzg?e=aatrhv)
