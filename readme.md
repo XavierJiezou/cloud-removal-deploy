@@ -11,6 +11,7 @@ This repo contains a sample code to show how to create a Flask API server by dep
 2. Place the model on root dir.
 3. Run `app.py`.
 # Deploy
+Go to [https://ngrok.com/](https://ngrok.com/), register an account and then you can get an authtoken.
 ```bash
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
