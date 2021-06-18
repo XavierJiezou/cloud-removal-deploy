@@ -4,6 +4,10 @@ This repo contains a sample code to show how to create a Flask API server by dep
 > [https://410a2aab7578.ngrok.io/](https://410a2aab7578.ngrok.io/)
 
 ![demo.png](demo.png)
+# Install
+```
+pip install -r requirements.txt
+```
 # Usage
 1. Download the pretrained model.
 - For RCIE1 (thin cloud dataset): [model_thin.pth](https://j8rd-my.sharepoint.com/:u:/g/personal/25_t_skings_club/EVw8ftEDszJBrT403aVmmCwBZFPOrNZuYb1pSVyU7MAQzg?e=aatrhv)
